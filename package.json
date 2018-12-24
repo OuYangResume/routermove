@@ -1,0 +1,14 @@
+{
+  "name": "routermove",
+  "version": "1.0.3",
+  "description": "基于maptalks开发轨迹回放的插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oouyang",
+  "license": "ISC",
+  "dependencies": {
+    "maptalks": "^0.42.1"
+  }
+}
