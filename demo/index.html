@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>轨迹回放</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/maptalks/dist/maptalks.min.js"></script>
+    <script src="../lib/index.js"></script>
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+</body>
+<script>
+     var map = new maptalks.Map("map", {
+        center: [111.32450763502036, 31.667512417065313],
+        zoom: 8,
+        baseLayer: new maptalks.TileLayer("base", {
+          urlTemplate:
+            "http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+          subdomains: ["a", "b", "c", "d"],
+          attribution:
+            '&copy; <a href="http://osm.org">OpenStreetMap</a> contributors, &copy; <a href="https://carto.com/">CARTO</a>'
+        })
+      });
+      var option = {
+        map: map,
+        lineData: [
+          [111.32450763502036, 31.667512417065313],
+          [113.32450763502036, 33.667512417065313],
+          [114.32450763502036, 31.667512417065313],
+          [114.32450763502036, 36.667512417065313],
+          [116.32450763502036, 35.667512417065313]
+        ]
+      };
+      var  path = RouterMove(option);
+      path.open()
+</script>
+</html>

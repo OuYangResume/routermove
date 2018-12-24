@@ -1,14 +1,27 @@
 {
   "name": "routermove",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "基于maptalks开发轨迹回放的插件",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel -d lib/ ./index.js",
+    "gulp": "gulp"
   },
   "author": "oouyang",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.2.2",
     "maptalks": "^0.42.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OuYangResume/routermove.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0"
   }
 }
