@@ -56,11 +56,11 @@ new RouterMove(options);
 ### `setSpeed(number)`
 设置轨迹移动速度
 
-###`setMarkerStyle(style)`
+### `setMarkerStyle(style)`
 设置动态点的样式
 
-###`setLineStyle(style)`
+### `setLineStyle(style)`
 设置底线样式
 
-###`setDynamicLineStyle(style)`
+### `setDynamicLineStyle(style)`
 设置动态线样式
