@@ -40,15 +40,12 @@ new RouterMove(options);
 * options **Object** 其他属性
     * speed **Number** 轨迹的移动速度，默认为2。
     * isOpen **Boolean** 是否开启轨迹动画，默认为true。
-
+    * isLineShow **Boolean**  是否显示轨迹底线，默认为true
 ### `open()`
 开始回放
 
-### `suspended()`
-暂停
-
-### `continued()`
-继续
+### `isContinued(boolean)`
+暂停为false,继续为true。
 
 ### `close()`
 清除轨迹
@@ -59,3 +56,11 @@ new RouterMove(options);
 ### `setSpeed(number)`
 设置轨迹移动速度
 
+###`setMarkerStyle(style)`
+设置动态点的样式
+
+###`setLineStyle(style)`
+设置底线样式
+
+###`setDynamicLineStyle(style)`
+设置动态线样式
