@@ -53,6 +53,10 @@ new RouterMove(options);
 ### `setData(lineData)`
 设置轨迹的数据
 
+### `isVisible(boolean)`
+轨迹底线的显示隐藏,true为显示。
+    
+
 ### `setSpeed(number)`
 设置轨迹移动速度
 
